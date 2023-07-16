@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,600&family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:'bobblebod';
+    src:url(img/font/Bobblebod.ttf);
+}
+
+html{
+    font-family: 'poppins' ,sans-serif;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    /* border: 2px solid black; */
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    width: 35%;
+    right: 10%;
+    border-radius: 0 120px 0 0;
+    height: 100%;
+    background: linear-gradient(0deg , #ffb12a,#fac140);
+    z-index: -1;
+}
+
+header nav{
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .left_nav{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+header nav .left_nav img{
+    width: 30px;
+
+}
+header nav .left_nav ul{
+    margin: 50px ;
+    display: flex;
+    align-items: center;
+   
+}
+header nav .left_nav ul li{
+    list-style: none;
+    padding: 3px 10px;
+    margin-right: 15px;
+   
+}
+header nav .left_nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: .3s linear;
+}
+header nav .left_nav li:nth-last-child(1){
+    background: #0080006e;
+    border-radius: 10px;
+    padding: 1px 13px;
+
+}
+header nav .left_nav li:nth-last-child(1) a{
+    color: white;
+
+}
+header nav .left_nav ul li a:hover{
+    color: rgb(70, 70, 70);
+}
+header nav .left_nav li:nth-last-child(1) a:hover{
+    color: rgb(0, 0, 0);
+    opacity: 1;  
+    transform: scale(1.1);
+}
+header nav .left_nav li:nth-last-child(1) a i{
+    margin-left: 5px;
+}
+ 
+
+header nav .right_nav{
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+}
+header nav .right_nav li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 3px 15px;
+}
+header nav .right_nav li a{
+    font-size: 17px;
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+header nav .right_nav li:nth-child(2){
+    background: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 100px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+header nav .right_nav li:nth-child(2) h6 i{
+   padding-left: 20px;
+}
+ 
+section{
+    width: 80%;
+    
+    margin: 20px auto;
+    display: flex;
+}
+section .contant , .img_box{
+    position: relative;
+    width: 40%;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+section  .img_box{
+    width: 60%;
+}
+
+section .contant h5{
+    background: #f04417;
+    display: unset;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+section .contant h1{
+    margin-top: 5px;
+    font-family:'bobblebod';
+    font-size: 60px;
+    line-height: 50px;
+    letter-spacing: -2px;
+}
+section .contant .spicy_icon{
+    margin-top: 12px;
+}
+section .contant p{
+    margin-top: 20px;
+    width: 300px;
+    font-size: 12px;
+}
+section .contant h6{
+    margin-top: 20px;
+    color: gray;
+}
+section .contant .img_icon{
+    display: flex;
+    align-items: center;
+}
+section .contant .img_icon img{
+    margin-right: 10px;
+}
+section .contant .img_icon h6{
+    background: #00a950;
+    color: white;
+    border-radius: 50%;
+    padding: 8px 10px;
+    position: relative;
+    top: -10px;
+}
+section .contant .order_rate{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+section .contant .order_rate a{
+    background: black;
+    border-radius: 10px;
+    padding: 7px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family:'bobblebod';
+    transition: .3s linear;
+}
+section .contant .order_rate a:hover{
+    background: #00a950;
+}
+section .contant .order_rate h2{
+    margin-left: 30px;
+    color: #00a950;
+    font-size: 30px;
+}
+section .contant .order_rate h2 sup{
+    margin-left: 5px;
+    color: #a3ca72;
+    font-size: 16px;
+    position: relative;
+    top:-5px;
+}
+section .contant .food_slider{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x:auto;
+    scroll-behavior: smooth;
+}
+section .contant .food_slider::-webkit-scrollbar{
+    display: none;
+}
+section .contant .food_slider img{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: .5;
+    transition: .3s linear;
+}
+section .contant .food_slider img:nth-child(1){
+    opacity: 1;  
+    transform: scale(1.1);
+}
+section .contant .food_slider img:hover{
+    opacity: 1;  
+    transform: scale(1.1);
+}
+section .img_box .images{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    margin-top: 50px;
+}
+section .img_box .images::-webkit-scrollbar{
+    display: none;
+}
+section .img_box .images img{
+    width: 35%;
+    margin-right: 50px;
+    filter: blur(1.5px);
+    transition: .3s linear;
+}
+section .img_box .images img:nth-child(1){
+    width: 60%;
+    filter: blur(0px);
+    transition: .3s linear;
+}
+.btns{
+    position: absolute;
+    bottom: 0;
+    left: 20.5%;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns i{
+    background: #ff8e27;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.burger_badge{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 10%;
+    right: 22%;
+    z-index: 999;
+}
+.badge_card{
+    width: 70px;
+    height: 80px;
+    background: white;
+    box-shadow: 0 0 20px rgb(0, 0, 0,.05);
+    margin-right: 5px;
+    border-radius: 5px 5px 15px 15px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.badge_card P{
+    color: gray;
+    font-size: 11px;
+}
+.badge_card h5{
+    color:#f04417;
+    font-size: 14px;
+    font-weight: 900;
+}
+.del{
+    width: 100%;
+    margin: auto;
+    background: #fbf8f2;
+    height: auto;
+    padding: 40px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cont h1{
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 50px;
+    font-family: 'bobblebod';
+}
+.cont p{
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.671);
+    font-weight: 600;
+    margin: 15px 0;
+}
+.cont button{
+    background: #00a950;
+    border-radius: 10px;
+    padding: 9px 15px;
+    color: white;
+    font-size: 13px;
+    font-family: 'bobblebod';
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.cont button:hover{
+    background: black;
+}
+.del img:nth-child(2){
+    width: 290px;
+    transform: translateX(-100px) translateY(30px);
+}
+.del img:nth-child(3){
+    width: 200px;
+    transform: translateX(-70px);
+}
+.food_chart{
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+}
+.food_chart .food_bx{
+    position: relative;
+    width: 30%;
+    height: 450px;
+    background: #00a950 ;
+    padding: 60px 50px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.food_chart .food_bx:nth-child(2){
+    width: 40%;
+    background: #ff8e27;
+}
+.food_chart .food_bx:nth-child(3){
+    width: 40%;
+    background: #a1cf67;
+}
+
+.cont1 h1{
+    font-family: 'bobblebod';
+    font-size: 50px;
+    line-height: 50px;
+    color: white;
+}
+.cont1 .par{
+    font-size: 11px;
+    color: white;
+    margin-top: 18px;
+
+}
+.cont1 button{
+    background:black;
+    border-radius: 10px;
+    padding: 9px 15px;
+    color: white;
+    font-size: 13px;
+    font-family: 'bobblebod';
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+    margin-top: 20px;
+}
+.cont1 img{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 250px;
+    z-index: -5;
+}
+
+
+
+
